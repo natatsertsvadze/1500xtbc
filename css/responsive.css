@@ -1,0 +1,13 @@
+@media (min-width: 768px) {
+    .navigation {
+        display: flex;
+    }
+    .burger {
+        display: none;
+    }
+}
+@media (min-width: 980px) {
+    header {
+        padding: 0 40px;
+    }
+}
