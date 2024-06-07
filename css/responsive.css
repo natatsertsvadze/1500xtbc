@@ -10,4 +10,27 @@
     header {
         padding: 0 40px;
     }
+    .information {
+        font-size: 28px;
+    }
+    .learn-more-btn {
+        font-size: 20px;
+    }
+}
+@media(min-width: 1100px) {
+    .header, .information-article, .learn-btn, .grid-title, h1 {
+        margin: 0 350px;
+    }
+    .text {
+        left: 350px;
+    }
+
+    .grid-itself {
+        margin: 0 200px;
+        display: grid;
+        grid-template-columns: 30% 30% 30% ;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
 }
