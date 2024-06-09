@@ -75,23 +75,31 @@ for (let i = 0; i < questionDiv.length; i++) {
 let slideIndex = 0;
 showSlides();
 
+
 function showSlides() {
   let i;
   let slides = document.getElementsByClassName("partners-slide");
   let dots = document.getElementsByClassName("dot");
+//   hide all slides
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
+//   increases slide index
   slideIndex++;
+// Reset slide index if it exceeds the number of slides
   if (slideIndex > slides.length) {
     slideIndex = 1;
   }
+  
+    // Remove "active" class from all dots
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
+
+    // Display the current slide and set the corresponding dot as active
   slides[slideIndex - 1].style.display = "flex";
   dots[slideIndex - 1].className += " active";
-  setTimeout(showSlides, 4000); // Change image every 3 seconds
+  setTimeout(showSlides, 4000); 
 }
 
 function plusSlides(n) {

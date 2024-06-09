@@ -18,19 +18,40 @@
     }
 }
 @media(min-width: 1100px) {
-    .header, .information-article, .learn-btn, .grid-title, h1 {
+    .header, .information-article, .learn-btn, .grid-title, .text, .partners-title, .grid-itself, .quest, .footer {
         margin: 0 350px;
     }
-    .text {
-        left: 350px;
-    }
-
     .grid-itself {
-        margin: 0 200px;
         display: grid;
         grid-template-columns: 30% 30% 30% ;
         grid-template-rows: 1fr 1fr 1fr;
         gap: 20px;
     }
+    .prev-btn, .next-btn {
+        display: flex;
+    }
+    .partners-title {
+        font-size: 24px;
+    }
+    .partners-slide {
+        display: flex;
+        flex-direction: row;
+        gap: 10%;
+    }
+    .image-partners {
+        width: 20%;
+        }
+        .next-btn, .prev-btn{
+            top: 70px;
+        }
+        .questions-heading {
+            font-size: 24px;
+        }
+        .questions {
+            padding: 30px 40px;
+        }
+        .every-question {
+            font-size: 24px;
+        }
 
 }
